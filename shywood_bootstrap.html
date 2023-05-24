@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style type="text/css">
+
+    .collapse navbar-collapse
+    {
+    display: flex;
+    flex-wrap: wrap;
+  }
+    
+    .nav-item a{  ; text-decoration: none;}
+
+    .nav-item a:hover { color: gold; }
+
+    i{padding-right: 20px;}
+
+    .main{
+  width: auto;
+
+  position: relative; color:white; }
+  .text{position: absolute;
+    bottom:50px;
+    left: 6%;
+    color: white;
+    font-size: 60px;
+
+  }
+  .card{display: flex;
+    flex-wrap: wrap;}
+    .row{
+      padding-top: 20px;
+      margin: 20px;
+    /*  padding: 40px;*/
+
+
+    }
+
+
+
+/*//css styling for cards section*/
+
+
+figure{
+  width: 324;
+  float: left;
+  margin: 0;
+}
+figcaption{
+  text-align: center;
+}
+figcaption h2{
+  text-transform: uppercase;
+  margin: 15px 0;
+font-family: "Poppins ExtrsBold";
+
+}
+figcaption p{
+  width: 90%;
+  margin: auto;font-size: 18px;
+  font-family: Roboto;
+  letter-spacing: 2px;
+
+}
+figcaption a{
+  background:tomato;
+  text-decoration: none;color: #fff;
+  text-transform: uppercase;
+  display:inline-block;
+  margin-top: 15px;
+  padding: 10px 30px;
+  letter-spacing: 3px;
+}
+.hover-animation{
+  position: relative;
+  height: 350px;
+  width: 350px;
+  margin:10% auto 0;
+  color: #fff;
+  box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+.hover-animation img{
+  position: absolute;
+  height: 350px;
+  width: 350px;
+  left:0;
+  -webkit-transition:opacity ls ease-in-out;
+  -noz-transition :opacity ls ease-in-out;
+  ns-transition:opacity ls ease-in-out;
+ -0-transition:opacity ls ease-in-out;
+}
+.hover-animation img.img-front:hover{opacity: 0;
+  cursor: pointer;
+
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+
+}
+
+#grid {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*navbar women dropdown css*/
+.women-dropdown{
+  display: flex;
+  flex-direction: row;
+  grid-column-gap: 20px;
+  padding: 30px;
+  border-image: 30px;
+
+}
+
+.men-dropdown{
+  display: flex;
+  flex-direction: row;
+  grid-column-gap: 20px;
+  padding: 30px;
+  border-image: 30px;
+
+}
+
+.collection-dropdown{
+  display: flex;
+  flex-direction: row;
+  grid-column-gap: 20px;
+  padding: 30px;
+  border-image: 30px;
+
+}
+
+/*img 1 css part*/
+.glasses{
+  height:auto; 
+
+}
+
+ .glasses{
+  width: auto;
+
+  position: relative; color: black; }
+  .text_word{position: absolute;
+    bottom:60px;
+    left: 40%;
+    color: white;
+    font-size: 60px;
+  }
+
+ 
+  .text_word a { text-decoration: none; 
+    color: black;
+  }
+.row p{
+  text-decoration: none;
+}
+
+
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="shywood_bootstrap.html"><img src="https://cdn.shopify.com/s/files/1/0535/9153/9896/files/shwood-logo.svg?v=1622571750"  width="90px height=90px"></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    </button>
+    
+
+
+    <div class="collapse navbar-collapse" id="navbarNav" style=" justify-content: center;">
+    <ul class="navbar-nav">
+      <!--  <h2>Hoverable Dropdown men</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p> -->
+        <li class="nav-item">
+
+          <div class="dropdown">
+    <span> <a class="nav-link" href="#">MEN</a></span>     
+
+  <div class="dropdown-content">
+     <div class="men-dropdown">
+  <!--   <div  id="grid"> -->
+  <div><img src="https://cdn.shopify.com/s/files/1/1992/1575/files/Trail_Fern_Walnut_Grey_WCT2F2GP-0502.jpg?v=1658272027" width=100px; height=100px;></div>
+
+   <div> <p>Sun Glasses</p></div>
+ <div><img src="https://cdn.shopify.com/s/files/1/1992/1575/files/Dayton_Gold_Walnut_RX_WRXTD2GW-0078.jpg?v=1658272640" width=100px; height=100px;></div>
+  
+  <div><p>RX Eyewear</p></div>
+
+</div>
+  </div>
+  </div>
+    </li>   
+<li class="nav-item">
+          <div class="dropdown">
+    <span> <a class="nav-link" href="#">WOMEN</a></span>
+
+      <div class="dropdown-content">
+      <div class="women-dropdown">
+      <img src="https://cdn.shopify.com/s/files/1/1992/1575/files/Cove_Fog_Walnut_Blue_Flash_WCCFB3PHD-0370.jpg?v=1658272027)" width=100px; height=100px; >
+      <p>Sun Glasses</p>
+      <img src="https://cdn.shopify.com/s/files/1/1992/1575/files/Venetta_Marine_WRXAVM5-0698.jpg?v=1658272027" width=100px; height=100px;>
+      <p>RX Eyewear</p>
+       </div>
+
+  </div>
+  </div>
+</li> <!--  <h2>Hoverable Dropdown collection</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p> -->
+<li class="nav-item">
+ <div class="dropdown">
+  
+    <span> <a class="nav-link" href="#">COLLECTIONS</a></span>
+  
+  <div class="dropdown-content">
+    <div class="collection-dropdown">
+  <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/CragClayWalnutBrown_WC2C3BP-02_x800.jpg?v=1681747303" width=140px; height=140px;>
+  <p>CAMP Crag </p>
+  <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/AinsworthCrystalGoldG15_WAAC2F-01_x800.jpg?v=1669040310" width=120px; height=130px;>
+  <p>Ainsworth Acetate </p>
+  
+  
+ 
+  </div>
+  </div>
+    </li>
+    <!--  <h2>Hoverable Dropdown explore</h2>
+<p>Move the mouse over the text below to open the dropdown content.</p> -->
+     <li class="nav-item">
+          <div class="dropdown">
+    <span> <a class="nav-link" href="shywood_bootstrap_explore.html">EXPLORE</a></span>
+  <div class="dropdown-content">
+  <img src="Screenshot_shywood.jpg" width=100px; height=100px;>
+  
+  <p>click on explore to know more about us</p>
+  </div>
+  </div>
+</li>
+</div>
+   
+  </ul>
+</form>
+   <form>
+    <div class="collapse navbar-collapse">
+     <nav class="navbar bg-body-tertiary ms-auto">
+          <a href="#"><i class="fa fa-magnifying-glass"></i></a>
+          <a href="shywood_bootstrap_create_accountpage.html"><i class="fa-solid fa-user"></i></a>
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+    </nav></div>     
+    </form>  
+</nav>
+
+       
+   </ul>
+
+  </div>
+  </div>
+</nav>
+ <div class="main">
+
+<div class="w3-container w3-center w3-animate-zoom">
+  
+  <img src="https://cdn.shopify.com/s/files/1/1992/1575/files/Hero-Summer-Wood-Frames_1728x.jpg?v=1658268683" alt="Car" style="width:100%"  height="600px" >
+
+
+
+      <p class="text">
+        <b style="font-size: x-large;"><i>RE-ENGINEERED</i></b><br>
+        <b style="font-size: xxx-large; font-family:Times New Roman; ">New Wood  !</b></br>
+        <i><u style="font-size: xxx-large; font-family:Times New Roman; ">Frames<u></i><br>
+          <button type="button" class="btn btn-warning">Men</button>
+          <button type="button" class="btn btn-warning">Women</button>
+        </p></div>
+   </div>
+    
+    </div>
+    
+    </div>
+  </div>
+</nav>
+
+ 
+ <div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <!--  first img -->
+
+  <figure>
+    <div class="hover-animation">
+      <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/CanbyWalnutGrey_WOCWG-01_x800.jpg?v=1670515220" alt="" class="img-back" width="300px">
+            <img src="https://cdn.shopify.com/s/files/1/1992/1575/files/Cove_Fog_Walnut_Blue_Flash_WCCFB3PHD-0370.jpg?v=1658272027)" alt="" class="img-front" width="300px">
+</div>
+<figcaption>
+  <h2>CAMP Eye wear</h2>
+  <p>Durable frames and polarized lenses built for adventure. </p>
+ <a href="a">shop now </a>
+</figcaption>
+</figure>
+
+    </div>
+  
+<!-- second img -->
+  <div class="col">
+<figure>
+    <div class="hover-animation">
+      <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/Riley_ACTV_Matte_Apricot_Elm_Burl_G15_WVR2MA2ELF_07_S_bd5a8128-581a-4d22-a9c5-bf65a6cc40ef_1200x1200.jpg?v=1633069305" alt="" class="img-back" width="200px" height="300px" >
+            <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/Riley-ACTV-Matte-Apricot-S21_2858_x800.jpg?v=1633058904" alt="" class="img-front" width="200px">
+</div>
+<figcaption>
+  <h2>ACTV Performance</h2>
+  <p>Performance eyewear engineered to endure all of your active pursuits.</p>
+ <a href="a">shop now</a>
+</figcaption>
+</figure>
+</div>
+<div class="col">
+<!-- third img -->
+<figure>
+<div class="hover-animation">
+      <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/TaborWalnutRXS22_9532_1800x1800.jpg?v=1650677440" alt="" class="img-back" width="300px">
+      <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/Dayton-Silver-S21_3398_1800x1800.jpg?v=1658520648" alt="" class="img-front" width="300px">
+</div>
+<figcaption>
+   <h2>METAL Originals</h2>
+   <p>Premium light weight metal frames with unique wooden detailing.</p>
+   <a href="a">shop now</a>
+</figcaption>
+</figure>
+</div> 
+</div>
+<!-- fourth img -->
+<div class="row">
+<div class="col">
+<figure>
+<div class="hover-animation">
+    <img src="https://www.miamiwholesalesunglasses.com/images/products/detail/8EYED13061retrosquareshades6.jpg" alt="" class="img-back" width="300px">
+    <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/KegonOrangeCrystalPacificWonderlandGreyPolarized_WPSKOPWGP-0246_1800x1800.jpg?v=1666732148" alt="" class="img-front" width="300px">
+</div>
+<figcaption>
+   <h2>PENDLETON EYEWEAR</h2>
+   <p>Pendleton's iconic patterns meet post-consumer recycled plastic. </p>
+   <a href="a">shop now</a>
+</figcaption>
+</figure>
+</div>  
+
+  <!-- fivth img -->
+<div class="col">
+<figure>
+<div class="hover-animation">
+    <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/CanbyStabilizedCactus_WLCSCG-02_x800.jpg?v=1653095544" alt="" class="img-back" width="300px">
+    <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/CanbyStabilizedCactus_WLCSCG-1113_x800.jpg?v=1658520512" alt="" class="img-front" width="300px">
+</div>
+<figcaption>
+   <h2>STABILIZED SERIES</h2>
+   <p> Original materials cast in resin and molded into frames.</p>
+   <a href="a">shop now</a>
+</figcaption>
+</figure>
+</div>
+
+
+    <!-- sixth img  -->
+<div class="col">
+<figure>
+<div class="hover-animation">
+    <img src="https://cdn.shopify.com/s/files/1/1992/1575/products/CanbyWalnutGrey_WOCWG-01_x800.jpg?v=1670515220" alt="" class="img-back" width="300px">
+    <img src="https://cdn.shopify.com/s/files/1/1992/1575/collections/f0395074198cd18e070e805ac2f80682_99a27b1f-60f2-4f74-afe7-061d0b89fa36_1400x.jpg?v=1658366448" alt="" class="img-front" width="300px">
+</div>
+<figcaption>
+   <h2>WOOD CLASSICS</h2>
+   <p> Our claims to fame: luxurious, domestic frames.</p>
+   <a href="a">shop now</a>
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<!-- end of cards  -->
+
+<!--image 1  -->
+<div class="image_1">
+<div class="glasses" >
+<img src="https://cdn.shopify.com/s/files/1/1992/1575/files/Screen_Shot_2022-11-01_at_12.08.43_PM_1728x.png?v=1667319000" width="1600px" height="500px">
+
+ <p class="text_word">
+        <b style="font-size: x-large;"><b>NEW   CAMP  LENSES</b></b><br>
+        <b style="font-size: xxx-large; font-family:Times New Roman; ">FRESH COLORS  !</b></br>
+        <a href="shywood_bootstrap.html"> <button type="button" class="btn btn-warning">SHOP NOW</button></a>
+    
+</p>
+</div></div>
+
+<!-- footer part -->
+<div class="card text-center">
+  <div class="card">
+our process
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">Always
+Experimenting</h5>
+    <p class="card-text" style="font-size: 20px">Our products are constantly evolving. Boundaries are pushed and failures are celebrated. The drive to experiment is what fuels our passion and transforms our work into a labor of love.</p>
+
+  </div>
+
+  
+  </div>
+</div>
+
+
+
+
+
+<!-- javascript link -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

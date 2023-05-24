@@ -1,0 +1,68 @@
+<style type="text/css">
+
+
+  }
+  .grid text-center{
+    border: 1px solid black;
+  }
+  .container text-center{padding: 10px;
+        width: 15rem;
+        height: 15rem;
+        overflow: hidden;
+        margin: 15px; border: 1px solid black;}
+
+  .col img{ width:100%;
+          height:100%;
+          object-fit:cover;
+          transition: transform 400ms; }
+
+    .col:hover img{ transform:scale(1.1); 
+              cursor: zoom-in;}
+    .col{
+        text-align-last: center;
+        border-radius: 30px;
+        word-spacing: 25px;
+        font-size: 16px;
+     /*   border: 1px solid black;*/
+        }
+    .col a{ color: blue; text-decoration: none;}
+
+    .col a:hover { color: white; }
+
+
+  
+  .nav-item1{
+    float: right;
+
+  }
+  .navbar{
+  background-color: white;
+  }
+  .Support { display: flex;
+                justify-content: right; }
+  .content{
+    padding-top: 20px;
+  }
+  .dropdown{
+  background-color: white;
+    border-radius: 20px;
+  }
+</style>
+
+/*
+
+// mobile responsive*/
+
+
+@media only screen and (max-width: 576px) {
+  .col{
+        text-align-last: center;
+        border-radius: 30px;
+        word-spacing: 25px;
+        font-size: 20px;
+     /*   border: 1px solid black;*/
+        }
+
+
+
+  }
